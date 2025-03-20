@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roman Numeral Converter</title>
     <link rel="stylesheet" href="styles.css" />
+       <!-- avoiding chrome force dark mode -->
+    <script>
+      var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if(isDarkMode){
+        document.write(`<meta name="color-scheme" content="dark Only"><\/meta>`);
+      }
+    </script>
   </head>
   <body>
     <div class="container">
